@@ -1,0 +1,194 @@
+/* Essential Style Start */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color: #212529;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.section-title {
+	margin-top: 60px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.section-title .title {
+	font-size: 32px;
+}
+
+.section-title .sub-title {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+
+.btn {
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary {
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-simple {
+	background-color: #fff;
+	border: 1px solid #ced4da;
+    border-radius: .25rem;	
+}
+
+.btn-simple:hover, .btn-simple.active {
+	background-color: #212529;
+	border: 1px solid #212529;
+	color: #fff;
+}
+/* Essential Style End */
+
+/* Form Style Start */
+.form-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.form-group input:not([type="submit"]), .form-group textarea {
+	width: 80%;
+	padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+}
+
+.form-group:last-child {
+	display: flex;
+	justify-content: flex-end;
+}
+/* Form Style End */
+
+/* Header Section Style Start */
+header {
+	width: 100%;
+	height: 60px;
+	font-weight: lighter;
+	background-color: #f8f9fa;
+}
+
+header .logo {
+	height: 60px;
+	line-height: 60px;
+	letter-spacing: 10px;
+	color: #0009;
+	cursor: pointer;
+	margin-right: 25px;
+}
+
+header .logo:hover {
+	color: #3273dc;
+}
+
+header .b_menu {
+	position: relative;
+}
+
+header .h_menu {
+	position: absolute;
+	top: 60px;
+	height: 0%;
+	visibility: hidden;
+	transition: .2s;
+	opacity: 0;
+	z-index: 1000;
+}
+
+header .h_menu a {
+	height: 60px;
+	background-color: #f8f9fa;
+}
+
+header .b_menu > a:hover ~ .h_menu, header .h_menu:hover {
+	opacity: 1;
+	height: 100%;
+	visibility: visible;
+}
+
+header a:not(.logo) {
+	display: block;
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #0009;
+}
+
+header a.active {
+	color: #3273dc;
+	font-weight: normal;
+}
+
+header a:not(.logo):hover {
+	color: #3273dc;
+	background-color: #f3f3f3;
+}
+/* Header Section Style End */
+
+/* Login, Join Section Style Start */
+#login form, #join form {
+	margin-top: 30px;
+}
+/* Login, Join Section Style End */
+
+/* File List Section Style Start */
+#file-list .file {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#file-list .file:nth-child(2n) {
+	background-color: #f3f3f3;
+}
+
+.file {
+	font-size: 14px;
+}
+/* File List Section Style End */
+
+/* Out Share Section Style Start */
+#out-share .file {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#out-share .file:nth-child(2n) {
+	background-color: #f3f3f3;
+}
+/* Out Share Section Style End */

@@ -4,7 +4,7 @@
 =============
 가벼운 파일관리 및 메세지 전송 서비스
 <br>
-7chance.net
+http://7chance.net
 <br>
 
 사용법
